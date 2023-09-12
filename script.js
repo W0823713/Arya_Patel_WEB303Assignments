@@ -12,7 +12,7 @@ $(document).ready(function() {
         
         /* Check if the input is a valid number */
         if (isNaN(getSalary) || isNaN(getPercent)) {
-            $('#amount').text("Invalid input"); // Display an error message
+            $('#amount').text("Enter Amount"); // Display an error message
         } else {
             var resultVal = "$" + (getSalary * getPercent / 100).toFixed(2);
             
