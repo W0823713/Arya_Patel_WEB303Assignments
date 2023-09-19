@@ -1,4 +1,6 @@
 // WEB303 Assignment 2
+// Name: Arya Patel
+// Student ID: 0823713
 
 
 $(document).ready(function () {
