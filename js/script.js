@@ -1,39 +1,43 @@
-function fetchTeamDataJSON() {
+function getTeamDataWithGetJSON() {
     $.getJSON('team.json', function(data) {
         $.each(data, function(index, member) {
-            var memberHTML = '<div class="team-member">' +
-                '<h2>' + member.name + '</h2>' +
-                '<h5>' + member.position + '</h5>' +
-                '<p>' + member.bio + '</p>' +
-                '</div>';
-            $('#team').append(memberHTML);
+            var memberDiv = $('<div class="team-member">');
+            var nameHeading = $('<h2>').text(member.name);
+            var positionHeading = $('<h5>').text(member.position);
+            var bioParagraph = $('<p>').text(member.bio);
+
+            memberDiv.append(nameHeading, positionHeading, bioParagraph);
+            $('#team').append(memberDiv);
         });
     });
 }
 
-function fetchTeamDataAjax() {
-    $('#team').html('Loading...');
+function getTeamDataWithAjax() {
     $.ajax({
         type: 'GET',
         url: 'team.json',
         dataType: 'json',
+        beforeSend: function() {
+            $('#team').text('Loading...');
+        },
         success: function(data) {
-            $('#team').html('');
+            $('#team').empty();
             $.each(data, function(index, member) {
-                var memberHTML = '<div class="team-member">' +
-                    '<h2>' + member.name + '</h2>' +
-                    '<h5>' + member.position + '</h5>' +
-                    '<p>' + member.bio + '</p>' +
-                    '</div>';
-                $('#team').append(memberHTML);
+                var memberDiv = $('<div class="team-member">');
+                var nameHeading = $('<h2>').text(member.name);
+                var positionHeading = $('<h5>').text(member.position);
+                var bioParagraph = $('<p>').text(member.bio);
+
+                memberDiv.append(nameHeading, positionHeading, bioParagraph);
+                $('#team').append(memberDiv);
             });
         },
         error: function() {
-            $('#team').html('Error: Content could not be retrieved.');
-        }
+            $('#team').text('Error: Content could not be retrieved.');
+        },
     });
 }
 
 $(document).ready(function() {
-    setTimeout(fetchTeamDataAjax, 3000);
+    getTeamDataWithAjax();
 });
