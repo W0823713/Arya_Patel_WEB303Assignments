@@ -1,45 +1,56 @@
-$(document).ready(function () {
-    // Step 2: Create a method for $.getJSON
-    function getTeamDataWithGetJSON() {
-        $.getJSON('team.json', function (dataValue) {
-            $.each(dataValue.members, function (key, val) {
-                $('#team').append(`<div>
-                    <h2>${val.name}</h2>
-                    <h5>${val.position}</h5>
-                    <p>${val.bio}</p>
-                </div>`);
+// Method for $.getJSON request
+function fetchTeamDataJSON() {
+    $.getJSON('team.json', function(data) {
+        // Loop through the data array
+        $.each(data, function(index, member) {
+            // Create HTML elements and append data
+            var memberHTML = '<div class="team-member">' +
+                '<h2>' + member.name + '</h2>' +
+                '<h5>' + member.position + '</h5>' +
+                '<p>' + member.bio + '</p>' +
+                '</div>';
+
+            $('#team').append(memberHTML);
+        });
+    });
+}
+
+// Method for $.ajax request
+function fetchTeamDataAjax() {
+    // Display loading message
+    $('#team').html('Loading...');
+
+    $.ajax({
+        type: 'GET',
+        url: 'team.json',
+        dataType: 'json',
+        success: function(data) {
+            // Remove loading message
+            $('#team').html('');
+
+            // Loop through the data array
+            $.each(data, function(index, member) {
+                // Create HTML elements and append data
+                var memberHTML = '<div class="team-member">' +
+                    '<h2>' + member.name + '</h2>' +
+                    '<h5>' + member.position + '</h5>' +
+                    '<p>' + member.bio + '</p>' +
+                    '</div>';
+
+                $('#team').append(memberHTML);
             });
-        }).fail(function () {
-            $("#team").text("Can't display the data. There is something wrong!!");
-        });
-    }
+        },
+        error: function() {
+            // Display error message if the request fails
+            $('#team').html('Error: Content could not be retrieved.');
+        }
+    });
+}
 
-    // Step 3: Create a method for $.ajax
-    function getTeamDataWithAjax() {
-        $.ajax({
-            type: 'GET',
-            url: 'team.json',
-            dataType: 'json',
-            beforeSend: function () {
-                $('#team').text('Loading...');
-            },
-            success: function (dataValue) {
-                $('#team').empty(); // Clear previous content
-                $.each(dataValue.members, function (key, val) {
-                    $('#team').append(`<div>
-                        <h2>${val.name}</h2>
-                        <h5>${val.position}</h5>
-                        <p>${val.bio}</p>
-                    </div>`);
-                });
-            },
-            error: function () {
-                $('#team').text('Error: Content could not be retrieved.');
-            },
-        });
-    }
-
-    // Call one of the methods to execute the code
-    // You can choose either getTeamDataWithGetJSON() or getTeamDataWithAjax()
-    getTeamDataWithGetJSON(); // Or getTeamDataWithAjax() here
+// Call one of the methods in a jQuery ready function
+$(document).ready(function() {
+    // Hello Sir, Check my both method working in the below code 
+    // Thank you 
+    // Call the fetchTeamDataAjax or fetchTeamDataJSON  method to fetch and display data with a loading delay
+    setTimeout(fetchTeamDataAjax, 3000); // 3 seconds delay
 });
