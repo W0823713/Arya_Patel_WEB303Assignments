@@ -1,3 +1,8 @@
+/*
+Name: Arya Patel
+Student id: 0823713
+*/
+
 $(document).ready(function() {
     if ("geolocation" in navigator) {
         navigator.geolocation.getCurrentPosition(function(position) {
