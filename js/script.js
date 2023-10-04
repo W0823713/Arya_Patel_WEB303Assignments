@@ -58,7 +58,12 @@ $(document).ready(function() {
         var distanceKilometers = (distanceMeters / 1000).toFixed(2); 
         return distanceKilometers + " km";
     }
-    
+    // $('#locationhere').accordion();
+
+    // DO NOT EDIT ANY CODE IN THIS FUNCTION DEFINTION
+    // function to calculate the distance in metres between two lat/long pairs on Earth
+    // Haversine formula - https://en.wikipedia.org/wiki/Haversine_formula
+    // Aren't those cool variable names? Yah gotta love JavaScript
     function calcDistanceBetweenPoints(lat1, lon1, lat2, lon2) {
         var toRadians = function (num) {
             return num * Math.PI / 180;
