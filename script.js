@@ -89,7 +89,7 @@ $(document).ready(function () {
     contentItems[0].updateContentItem(
       0,
       "Sorry Your content is not updated",
-      "Cars that only a few can get their hands on and are very rare",
+      "Please try again later",
       "no cars"
     );
     updateContentItemOnPage(0);
