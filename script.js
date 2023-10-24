@@ -76,17 +76,9 @@ $(document).ready(function () {
     
     // Event handlers for the buttons
    $('#update-success').click(function () {
-    // Update all information for the first content item
-    contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
-
-    // Add a new ContentItem for a different category
-    const newItem = new ContentItem(5, "New Car", "Brand new car description.", "Brand New Cars");
-    contentItems.push(newItem);
-
-    // Update the displayed content for the first and new content items
-    updateContentItemOnPage(0);
-    contentItemList.append(newItem.toString());
-});
+        contentItems[0].updateContentItem(0, "Hypercars", "Cars that only a few can get their hands on and are very rare", "Hyper cars");
+        updateContentItemOnPage(0);
+    });
 
     updateFailButton.click(function () {
         contentItems[1].updateContentItem(0, "New Name", null, "New Category");
