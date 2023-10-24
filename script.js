@@ -75,12 +75,23 @@ $(document).ready(function () {
     $('body').append(updateFailButton);
     
     // Event handlers for the buttons
-   $('#update-success').click(function () {
-        contentItems[0].updateContentItem(0, "Hypercars", "Cars that only a few can get their hands on and are very rare", "Hyper cars");
-        updateContentItemOnPage(0);
-    });
+  $("#update-success").click(function () {
+    contentItems[0].updateContentItem(
+      0,
+      "Hypercars",
+      "Cars that only a few can get their hands on and are very rare",
+      "Hyper cars"
+    );
+    updateContentItemOnPage(0);
+  });
 
-    updateFailButton.click(function () {
-        contentItems[1].updateContentItem(0, "New Name", null, "New Category");
-    });
+  $("#update-fail").click(function () {
+    contentItems[0].updateContentItem(
+      0,
+      "Sorry Your content is not updated",
+      "Cars that only a few can get their hands on and are very rare",
+      "no cars"
+    );
+    updateContentItemOnPage(0);
+  });
 });
