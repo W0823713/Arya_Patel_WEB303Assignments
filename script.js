@@ -1,7 +1,3 @@
-/*
-    Assignment 05
-*/
-
 $(document).ready(function () {
     class ContentItem {
         constructor(id, name, description, category) {
@@ -44,7 +40,15 @@ $(document).ready(function () {
         new ContentItem(3, "Truck", "A powerful and capable truck for heavy-duty tasks.", "Pickup Trucks"),
         new ContentItem(4, "Convertible", "A convertible car that lets you enjoy the open road.", "Convertible Cars"),
     ];
-    
+
+    function updateContentItemOnPage(itemIndex) {
+        const updatedItem = contentItems[itemIndex];
+        const itemWrapper = $(`#content-item-${updatedItem.id}`);
+        itemWrapper.find('h2').text(updatedItem.name);
+        itemWrapper.find('p').text(updatedItem.description);
+        itemWrapper.find('div').text(updatedItem.category);
+    }
+
     const contentItemList = $('#content-item-list');
     
     contentItems.forEach(item => {
@@ -62,13 +66,12 @@ $(document).ready(function () {
     const themeName = "Your Chosen Theme";
     $('#theme-name').text(themeName);
 
-    $('#update-success').click(function() {
+    $('#update-success').click(function () {
         contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
+        updateContentItemOnPage(0);
     });
 
-    $('#update-fail').click(function() {
+    $('#update-fail').click(function () {
         contentItems[1].updateContentItem(0, "New Name", null, "New Category");
     });
 });
-
-
