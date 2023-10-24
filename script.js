@@ -66,12 +66,21 @@ $(document).ready(function () {
     const themeName = "Your Chosen Theme";
     $('#theme-name').text(themeName);
 
-    $('#update-success').click(function () {
+    // Create buttons dynamically using JavaScript
+    const updateSuccessButton = $('<button id="update-success">Update Successfully</button>');
+    const updateFailButton = $('<button id="update-fail">Update Unsuccessfully</button>');
+    
+    // Append buttons to the page
+    $('body').append(updateSuccessButton);
+    $('body').append(updateFailButton);
+    
+    // Event handlers for the buttons
+    updateSuccessButton.click(function () {
         contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
         updateContentItemOnPage(0);
     });
 
-    $('#update-fail').click(function () {
+    updateFailButton.click(function () {
         contentItems[1].updateContentItem(0, "New Name", null, "New Category");
     });
 });
