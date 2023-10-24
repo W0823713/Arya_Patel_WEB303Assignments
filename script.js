@@ -75,10 +75,18 @@ $(document).ready(function () {
     $('body').append(updateFailButton);
     
     // Event handlers for the buttons
-    updateSuccessButton.click(function () {
-        contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
-        updateContentItemOnPage(0);
-    });
+   $('#update-success').click(function () {
+    // Update all information for the first content item
+    contentItems[0].updateContentItem(0, "New Name", "New Description", "New Category");
+
+    // Add a new ContentItem for a different category
+    const newItem = new ContentItem(5, "New Car", "Brand new car description.", "Brand New Cars");
+    contentItems.push(newItem);
+
+    // Update the displayed content for the first and new content items
+    updateContentItemOnPage(0);
+    contentItemList.append(newItem.toString());
+});
 
     updateFailButton.click(function () {
         contentItems[1].updateContentItem(0, "New Name", null, "New Category");
