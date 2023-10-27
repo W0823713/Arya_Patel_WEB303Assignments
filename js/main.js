@@ -28,7 +28,7 @@ $(document).ready(function () {
             dataType: 'html',
             success: function (response) {
                 var $contentVal = $('#content');
-                $contentVal.hide().html(response).fadeIn(1500).css({
+                $contentVal.hide().html(response).fadeIn(1900).css({
                     'border': '1.5px solid red'
                 });
             },
@@ -46,7 +46,7 @@ $(document).ready(function () {
             success: function (response) {
                 var $contentVal = $('#content');
                 $contentVal.hide().html(response).fadeIn(1500).css({
-                    'border': '1.5px solid red'
+                    'border': '1.8px solid red'
                 });
             },
             error: function () {
