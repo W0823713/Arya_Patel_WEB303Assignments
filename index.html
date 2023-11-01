@@ -81,23 +81,21 @@
             <img src="img5.jpg" alt="Quotes Image">
         </div>
     </div>
-    <script type="text/javascript" src="js/script.js"></script>
-</body>
-<table id="characterTable">
+    <h3>Table</h3>
     <thead>
         <tr>
-            <th><a href="#" data-column="First Name">First Name</a></th>
-            <th><a href="#" data-column="Last Name">Last Name</a></th>
-            <th><a href="#" data-column="Age">Age</a></th>
-            <th><a href="#" data-column="Date of Birth">Date of Birth</a></th>
-            <!-- Add other table headings here -->
+            <th><a href="#" class="sort" data-column="firstName">First Name <span class="chevron">&#x25B2;</span></a></th>
+            <th><a href="#" class="sort" data-column="lastName">Last Name <span class="chevron">&#x25B2;</span></a></th>
+            <th><a href="#" class="sort" data-column="dateOfBirth">Date of Birth <span class="chevron">&#x25B2;</span></a></th>
+            <th><a href="#" class="sort" data-column="occupation">Occupation <span class="chevron">&#x25B2;</span></a></th>
+            <th><a href="#" class="sort" data-column="series">Series <span class="chevron">&#x25B2;</span></a></th>
+            <th><a href="#" class="sort" data-column="description">Description <span class="chevron">&#x25B2;</span></a></th>
         </tr>
     </thead>
-    <tbody>
-        <!-- Character data will be populated dynamically using JavaScript -->
-    </tbody>
-</table>
-
+    
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="characters.json"></script>
+</body>
 
 <footer>
     &copy; 2023 Lewis Hamilton Fan Page
