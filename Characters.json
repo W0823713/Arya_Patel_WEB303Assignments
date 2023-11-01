@@ -1,0 +1,18 @@
+{
+    "characters": [
+        {
+            "First Name": "John",
+            "Last Name": "Doe",
+            "Age": 30,
+            "Date of Birth": "1993-06-15"
+           
+        },
+        {
+            "First Name": "Jane",
+            "Last Name": "Smith",
+            "Age": 25,
+            "Date of Birth": "1998-04-22"
+            
+        }
+    ]
+}
