@@ -1,66 +1,89 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #000000; /* Set the background color to black */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Set the background color to black */
 }
 h1 {
-    color: #fff; /* Set the text color of h1 to white */
+  color: #fff; /* Set the text color of h1 to white */
 }
 
 /* Center the header in the middle of the page */
 .header {
-    text-align: center; /* Horizontally center the text and image */
-    padding: 20px 0; /* Add some space above and below the header for vertical centering */
+  text-align: center; /* Horizontally center the text and image */
+  padding: 20px 0; /* Add some space above and below the header for vertical centering */
 }
 
 /* Styles for the accordion headers */
 .accordion h3 {
-    background-color: #333;
-    color: #fff;
-    padding: 15px; /* Increased padding for the accordion headers */
-    cursor: pointer;
-    font-size: 18px; /* Increased font size for the headers */
+  background-color: #333;
+  color: #fff;
+  padding: 15px; /* Increased padding for the accordion headers */
+  cursor: pointer;
+  font-size: 18px; /* Increased font size for the headers */
 }
 
 /* Styles for the accordion content panels */
 .accordion div {
-    background-color: #f0f0f0;
-    padding: 15px; /* Increased padding for the content panels */
-    display: none;
-    font-size: 16px; /* Increased font size for the content */
+  background-color: #f0f0f0;
+  padding: 15px; /* Increased padding for the content panels */
+  display: none;
+  font-size: 16px; /* Increased font size for the content */
 }
 
 /* Styles for the tab headers */
 .tabs ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    background-color: #333;
-    color: #ff0000; /* Set the text color to white */
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #333;
+  color: #ff0000; /* Set the text color to white */
 }
-
 
 /* Styles for the tab content panels */
 .tabs div {
-    background-color: #fff; /* Set the background color to white */
-    padding: 15px;
-    display: none;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-radius: 5px;
+  background-color: #fff; /* Set the background color to white */
+  padding: 15px;
+  display: none;
+  font-size: 16px;
+  border: 2px solid #333;
+  border-radius: 5px;
 }
 /* Styles for the footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
 }
-
 
 /* Create a clear space for the footer */
 .content-wrapper {
-    min-height: 100vh;
-    padding-bottom: 60px; /* Should match the footer's height */
+  min-height: 100vh;
+  padding-bottom: 60px; /* Should match the footer's height */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+  color: #fff;
+}
+
+th {
+  cursor: pointer;
+}
+
+.asc::after {
+  content: " "; /* You can also use "&#x25B2;" for the same arrow symbol */
+}
+
+.desc:after {
+  content: " ";
 }
