@@ -1,0 +1,38 @@
+#photo-viewer {
+  display: none;
+}
+#photo-viewer .photo-box {
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 450px;
+  background-color:rgb(5, 5, 5);
+}
+#photo-viewer .photo-box.is-loading::after {
+  content: "Loading...";
+  position: absolute;
+  z-index: 10;
+  color: #ffffff;
+  top: calc(50% - 20px);
+  left: calc(50% - 50px);
+}
+#photo-viewer .photo-box img {
+  position: absolute;
+  /* max-width: 100%;
+  max-height: 100%; */
+  width: 800px;
+  height: 450px;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  border: 2px solid black;
+}
+#photo-viewer .thumbnail-anchor img {
+  margin-top: 6px;
+  width: 80px;
+  height: 45px;
+  border: 2px solid black;
+}
+#photo-viewer .thumbnail-anchor img.active{
+  margin: 0;
+}
