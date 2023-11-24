@@ -1,0 +1,82 @@
+[
+    {
+        "firstName": "Harry",
+        "lastName": "Potter",
+        "age": 17,
+        "gender": "Male",
+        "occupation": "Student",
+        "trait1": "Wizard",
+        "trait2": "Courageous",
+        "trait3": "Loyal"
+    },
+    {
+        "firstName": "Hermione",
+        "lastName": "Granger",
+        "age": 18,
+        "gender": "Female",
+        "occupation": "Student",
+        "trait1": "Muggle-born",
+        "trait2": "Smart",
+        "trait3": "Resourceful"
+    },
+    {
+        "firstName": "Ron",
+        "lastName": "Weasley",
+        "age": 18,
+        "gender": "Male",
+        "occupation": "Student",
+        "trait1": "Ginger",
+        "trait2": "Loyal",
+        "trait3": "Brave"
+    },
+    {
+        "firstName": "Gandalf",
+        "lastName": "Grey",
+        "age": 2000,
+        "gender": "Male",
+        "occupation": "Wizard",
+        "trait1": "Istari",
+        "trait2": "Wise",
+        "trait3": "Guiding"
+    },
+    {
+        "firstName": "Frodo",
+        "lastName": "Baggins",
+        "age": 33,
+        "gender": "Male",
+        "occupation": "Ring-bearer",
+        "trait1": "Hobbit",
+        "trait2": "Courageous",
+        "trait3": "Resilient"
+    },
+    {
+        "firstName": "Arya",
+        "lastName": "Stark",
+        "age": 16,
+        "gender": "Female",
+        "occupation": "Assassin",
+        "trait1": "Stark",
+        "trait2": "Independent",
+        "trait3": "Cunning"
+    },
+    {
+        "firstName": "Katniss",
+        "lastName": "Everdeen",
+        "age": 18,
+        "gender": "Female",
+        "occupation": "Huntress",
+        "trait1": "District 12",
+        "trait2": "Archery skills",
+        "trait3": "Determined"
+    },
+    {
+        "firstName": "Sherlock",
+        "lastName": "Holmes",
+        "age": 40,
+        "gender": "Male",
+        "occupation": "Detective",
+        "trait1": "Genius",
+        "trait2": "Logical",
+        "trait3": "Observant"
+    }
+]
