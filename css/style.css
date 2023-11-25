@@ -1,43 +1,43 @@
 * {
-    background-color: floralwhite;
-  }
-  
-  h1 {
-    font-family: "Times New Roman", Times, serif;
-  }
-  
-  table,
-  th,
-  td {
-    border: 1px solid;
-    padding: 8px; /* Adjust this value to your preference */
-    text-align: center;
-  }
-  
-  th {
-    background-color: black;
-    color: white;
-  }
-  
-  .name.highlighted td {
-    background-color: #006400;
-    color: white;
-  }
-  
-  td {
-    background-color: lightcoral;
-  }
-  
-  #filterAM,
-  #filterNZ {
-    background-color: green;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
-    cursor: pointer;
-  }
-  
+  background-color: rgba(206, 206, 206, 0.42);
+}
+
+h1 {
+  font-family: "Arial", sans-serif;
+}
+
+table,
+th,
+td {
+  border: 2px solid #333;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #555;
+  color: white;
+}
+
+.name.highlighted td {
+  background-color: #1aff00;
+  color: white;
+}
+
+
+td {
+  background-color: #f0f0f0;
+}
+#filterAM,
+#filterNZ {
+  background-color: navy;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 5px 5px;
+  cursor: pointer;
+  border-radius: 10px; 
+}
