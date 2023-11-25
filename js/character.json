@@ -1,82 +1,65 @@
-[
-    {
-        "firstName": "Harry",
-        "lastName": "Potter",
-        "age": 17,
-        "gender": "Male",
-        "occupation": "Student",
-        "trait1": "Wizard",
-        "trait2": "Courageous",
-        "trait3": "Loyal"
-    },
-    {
-        "firstName": "Hermione",
-        "lastName": "Granger",
-        "age": 18,
-        "gender": "Female",
-        "occupation": "Student",
-        "trait1": "Muggle-born",
-        "trait2": "Smart",
-        "trait3": "Resourceful"
-    },
-    {
-        "firstName": "Ron",
-        "lastName": "Weasley",
-        "age": 18,
-        "gender": "Male",
-        "occupation": "Student",
-        "trait1": "Ginger",
-        "trait2": "Loyal",
-        "trait3": "Brave"
-    },
-    {
-        "firstName": "Gandalf",
-        "lastName": "Grey",
-        "age": 2000,
-        "gender": "Male",
-        "occupation": "Wizard",
-        "trait1": "Istari",
-        "trait2": "Wise",
-        "trait3": "Guiding"
-    },
-    {
-        "firstName": "Frodo",
-        "lastName": "Baggins",
-        "age": 33,
-        "gender": "Male",
-        "occupation": "Ring-bearer",
-        "trait1": "Hobbit",
-        "trait2": "Courageous",
-        "trait3": "Resilient"
-    },
-    {
-        "firstName": "Arya",
-        "lastName": "Stark",
-        "age": 16,
-        "gender": "Female",
-        "occupation": "Assassin",
-        "trait1": "Stark",
-        "trait2": "Independent",
-        "trait3": "Cunning"
-    },
-    {
-        "firstName": "Katniss",
-        "lastName": "Everdeen",
-        "age": 18,
-        "gender": "Female",
-        "occupation": "Huntress",
-        "trait1": "District 12",
-        "trait2": "Archery skills",
-        "trait3": "Determined"
-    },
-    {
-        "firstName": "Sherlock",
-        "lastName": "Holmes",
-        "age": 40,
-        "gender": "Male",
-        "occupation": "Detective",
-        "trait1": "Genius",
-        "trait2": "Logical",
-        "trait3": "Observant"
-    }
-]
+{
+    "characters": [
+      {
+        "First_Name": "Jon",
+        "Last_Name": "Snow",
+        "Dragon_name": "Ghost",
+        "House": "Stark",
+        "Status": "Alive",
+        "First_Appearance": "Season 1",
+        "Abilities": ["Swordsmanship", "Leadership"],
+        "Notable_Achievements": ["Battle of the Bastards"]
+      },
+      {
+        "First_Name": "Daenerys",
+        "Last_Name": "Targaryen",
+        "Dragon_name": "Drogon",
+        "House": "Targaryen",
+        "Status": "Deceased",
+        "First_Appearance": "Season 1",
+        "Abilities": ["Dragonriding", "Fire immunity"],
+        "Notable_Achievements": ["Conquering Slaver's Bay"]
+      },
+      {
+        "First_Name": "Tyrion",
+        "Last_Name": "Lannister",
+        "Dragon_name": "None",
+        "House": "Lannister",
+        "Status": "Alive",
+        "First_Appearance": "Season 1",
+        "Abilities": ["Strategic thinking", "Wit"],
+        "Notable_Achievements": ["Hand of the Queen"]
+      },
+      {
+        "First_Name": "Arya",
+        "Last_Name": "Stark",
+        "Dragon_name": "None",
+        "House": "Stark",
+        "Status": "Alive",
+        "First_Appearance": "Season 1",
+        "Abilities": ["Assassination", "Faceless Man skills"],
+        "Notable_Achievements": ["Defeating the Night King"]
+      },
+      {
+        "First_Name": "Cersei",
+        "Last_Name": "Lannister",
+        "Dragon_name": "None",
+        "House": "Lannister",
+        "Status": "Deceased",
+        "First_Appearance": "Season 1",
+        "Abilities": ["Political cunning", "Strategic planning"],
+        "Notable_Achievements": ["Queen of the Seven Kingdoms"]
+      },
+      {
+        "First_Name": "Jaime",
+        "Last_Name": "Lannister",
+        "Dragon_name": "None",
+        "House": "Lannister",
+        "Status": "Deceased",
+        "First_Appearance": "Season 1",
+        "Abilities": ["Swordsmanship", "Redemption"],
+        "Notable_Achievements": ["Killing the Mad King"]
+      }
+    ]
+  }
+  

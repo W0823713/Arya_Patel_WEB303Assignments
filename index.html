@@ -1,25 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <h1>Arya Patel - Your Favorite Show/Movie/Book</h1>
-
-    <input type="text" id="searchInput" placeholder="Search by First Name">
-
-    <table id="characterTable">
-        <!-- Table will be dynamically populated with characters using jQuery -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+   
+    <h1>Arya's Game of Thrones</h1>
+    <input
+      type="search"
+      id="search"
+      placeholder="Search By Character First Name!"
+    />
+    <br /><br />
+    <table id="characters">
+      <thead>
+        <tr>
+          <th>First_Name</th>
+          <th>Last_Name</th>
+          <th>Dragon_name</th>
+          <th>House</th>
+          <th>Status</th>
+          <th>First Appearance</th>
+          <th>Abilities</th>
+          <th>Notable Achievements</th>
+        </tr>
+      </thead>
+      <tbody id="tbody" class="name"></tbody>
     </table>
+    <br />
+    <button type="button" id="filterAM">
+      A - M (<span id="button1">0</span>)
+    </button>
+    <button type="button" id="filterNZ">
+      N - Z (<span id="button2">0</span>)
+    </button>
+    <br />
 
-    <button id="filterAM">A - M (0)</button>
-    <button id="filterNZ">N - Z (0)</button>
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
+    <!-- Include your script.js file -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/character.json"></script>
-</body>
-
+  </body>
 </html>
