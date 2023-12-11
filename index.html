@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Arya's Cat Breeds</h1>
+    <input
+      type="search"
+      id="search"
+      placeholder="Search By Character First Name!"
+    />
+    <br /><br />
+    <table id="characters">
+      <thead>
+        <tr>
+          <th>Breed</th>
+          <th>Country</th>
+          <th>Origin</th>
+          <th>Coat</th>
+          <th>Pattern</th>
+        </tr>
+      </thead>
+      <tbody id="tbody" class="name"></tbody>
+    </table>
+    <br />
+    <button type="button" id="filtercountry">
+      USA (<span id="button1">0</span>)
+    </button>
+    <button type="button" id="filtercountry">
+      NOT USA (<span id="button2">0</span>)
+    </button>
+    <br />
+
+    <!-- Include jQuery from CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- Include your script.js file -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

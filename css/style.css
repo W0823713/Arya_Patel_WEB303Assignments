@@ -1,0 +1,51 @@
+* {
+    background-color: rgba(206, 206, 206, 0.42);
+  }
+  
+  h1 {
+    font-family: "Arial", sans-serif;
+  }
+  
+  table,
+  th,
+  td {
+    border: 2px solid #333;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #555;
+    color: white;
+  }
+  
+  .name.highlighted td {
+    background-color: pink;
+    color: white;
+  }
+  
+  td {
+    background-color: #f0f0f0;
+  }
+  #filterAM,
+  #filterNZ {
+    background-color: navy;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 5px 5px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  /* Styles for the accordion headers */
+  .accordion h3 {
+    background-color: #333;
+    color: #fff;
+    padding: 15px; /* Increased padding for the accordion headers */
+    cursor: pointer;
+    font-size: 18px; /* Increased font size for the headers */
+  }
+  
